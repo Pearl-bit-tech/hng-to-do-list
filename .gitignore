@@ -1,0 +1,19 @@
+# Local Python environment and generated files
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local database and private configuration
+backend/todos.db
+*.db
+.env
+
+# Installed JavaScript packages and caches
+frontend/node_modules/
+frontend/.npm-cache/
+frontend/dist/
+
+# Local runtime downloads, app logs, and workspace-only folders
+.tools/
+work/
+outputs/
