@@ -5,7 +5,11 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi",
     "uvicorn[standard]",
+    "psycopg[binary]",
 ]
 
 [tool.vercel]
 entrypoint = "backend.main:app"
+
+[tool.vercel.scripts]
+build = "npm --prefix frontend ci && npm --prefix frontend run build"
